@@ -1,0 +1,592 @@
+:root{
+    --background-color-primary: #ffffff;
+    --primary-color: #7EC54E;
+    --color-letter: #131313;
+    --color-letter2-primary: #131313;
+}
+
+body{
+    display: grid;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*::selection {
+  background-color: #b4e395;
+  color: #ffffff;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: transparent;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.elementos-header{
+    margin: 30px;
+}
+
+.logoPeeds{
+    height: 11.5vh;
+}
+
+.cta{
+    display: flex;
+    height: 8vh;
+    width: 36vh;
+    border-radius: 17px;
+    background-color: #F57F09;
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+    transition: box-shadow 0.5s ease;
+}
+
+.cta:hover{
+    box-shadow: 
+    0 0 163px #fb7f2c,
+    0 0 170px #fb7f2c,
+    0 0 145px #ffb443,
+    0 0 154px #fff048;
+    transition: 0.5s all ease;
+    background-color: #fc8638;
+}
+
+#h-icon-button{
+    display: block;
+    height: 6vh;
+    width: 6vh;
+    transform-origin: center center;
+    transition: 0.5s all ease;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.h-icon{
+    display: block;
+    height: 6vh;
+    width: 6vh;
+    transform-origin: center center;
+    transition: 0.5s all ease;
+}
+
+.h-icon:hover{
+    transform: rotate(180deg);
+    transition: 0.5s all ease;
+}
+
+#tela-icon{
+    width: 50vh;
+    height: 100vh;
+    background-color: var(--background-color-primary);
+    padding: 2vh;
+    border: 4px solid var(--primary-color);
+    margin-top: 80vh;
+}
+
+#tela-icon.escondido{
+    display: none;
+}
+
+.logoPeeds-telamenu{
+    height: 8vh;
+}
+
+.logo-nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hr-logonome{
+    width: 1px;
+    height: 6vh;
+    color: var(--primary-color);
+}
+
+.hr-division{
+    width: 55vh;
+    margin-top: 3vh;
+    color: var(--primary-color);
+}
+
+#tela-icon h2{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    margin-left: 2vh;
+    font-size: 2.6em;
+}
+
+.ul-ganchos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    gap: 5vh;
+}
+
+.ul-ganchos li{
+    cursor: pointer;
+    width: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.8em;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* main */
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color-primary);
+    flex-direction: column;
+}
+
+.princ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    width: 109vh;
+    background-color: var(--primary-color);
+    margin-top: 18vh;
+    border-radius: 35px;
+    border: 1px solid #26480E;
+}
+
+.peeds-frase-princ{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.peeds-frase-princ1{
+    color: white;
+    font-size: 5em;
+    margin-right: 26vh;
+    line-height: 15vh;
+    position: absolute;
+    transform: translate(20px);
+    transform: translate(11px, -8px);
+}
+
+.peeds-frase-princ2{
+    color: #26480E;
+    font-size: 5em;
+    margin-right: 26vh;
+    line-height: 15vh;
+    margin-left: 5vh;
+}
+
+.fraseDeEfeito{
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8em;
+  margin-top: 6vh;
+  margin-bottom: 5vh;
+  color: var(--color-letter2-primary);
+}
+
+#section2{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    background-image: url(imgs/imgpc1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.princ2{
+    height: 70vh;
+    width: 90vh;
+    background-color: rgba(68, 68, 68, 0.77); 
+    border-radius: 35px;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.princ2 h1{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    font-size: 3.4em;
+}
+
+.princ2 p{
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.8em;
+    line-height: 1.6;
+    margin-bottom: 3vh;
+}
+
+.princ2 a{
+    display: flex;
+    height: 7vh;
+    width: 44vh;
+    border-radius: 17px;
+    background-color: #F57F09;
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    transition: 0.5s all ease;
+}
+
+.princ2 a:hover{
+    background-color: #fc8638;
+    transition: 0.5s all ease;
+}
+
+#section3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10vh;
+    background-color: var(--background-color-primary);
+}
+
+.content-clientes{
+    background-color: var(--primary-color);
+    border-radius: 35px;
+    padding: 5vh;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-clientes h1{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.6em;
+    color: white;
+}
+
+.content-clientes h3{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+}
+
+.ul-clientes{
+    display: flex;
+    flex-direction: row;
+    gap: 15vh;
+    padding: 0;
+    margin: 5vh;
+}
+
+.li-content{
+    background-color: var(--background-color-primary);
+    flex-direction: column;
+    border-radius: 25px;
+    height: 60vh;
+    width: 42vh;
+    padding: 3vh;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2fr 3fr 50px;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+.imagem-nome{
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 1.3;
+    color: black;
+}
+
+.hs{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letter2-primary);
+}
+
+.hs h6{
+    color: var(--color-letter2-primary);
+}
+
+.img-clientes{
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ul-clientes li p{
+    color: var(--color-letter2-primary);
+    font-family: "Manrope", sans-serif;
+    font-size: 1.4em;
+}
+
+.avaliacao-estrela{
+    display: flex;
+    gap: 3px;
+    padding: 0;
+    margin-top: 2vh;
+}
+
+.estrela{
+    height: 2vh;
+}
+
+.content-clientes h2{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.3em;
+    color: white;
+}
+
+.ancoraFinal{
+    display: flex;
+    height: 7vh;
+    width: 45vh;
+    border-radius: 17px;
+    background-color: #F57F09;
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: 0.5s all ease;
+    margin-top: 3vh;
+}
+
+.ancoraFinal:hover{
+    background-color: #fc8638;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+#section4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-imagem{
+    background-image: url(imgs/imgpc2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-captura{
+    height: 72vh;
+    width: 100vh;
+    background-color: rgba(68, 68, 68, 0.77);
+    border-radius: 35px;
+    padding: 4vh;
+    margin-left: 6vh;
+    display: grid;
+    grid-template-rows: 1fr 32vh 13vh;
+}
+
+.container-captura h1{
+        font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4.0em;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+.container-captura h2{
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.2em;
+    margin-bottom: 2vh;
+}
+
+.container-captura input{
+    height: 6vh;
+    padding: 2vh;
+    width: auto;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    width: 80vh;
+}
+
+.container-captura a{
+    display: flex;
+    height: 7vh;
+    width: 45vh;
+    border-radius: 17px;
+    background-color: #F57F09;
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: 0.5s all ease;
+    margin-top: 3vh;
+}
+
+.container-captura a:hover{
+    background-color: #fc8638;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+#section5{
+    background-color: #74DA2F;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section5 h1{
+    display: flex;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 4em;
+    justify-content: center;
+}
+
+.garantias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+}
+
+.garantias li{
+    background-color: var(--background-color-primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 5vh;
+    width: 42vh;
+    height: 45vh;
+}
+
+.garantias li h3{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--color-letter2-primary);
+}
+
+.garantias li p{
+    font-family: "Manrope", sans-serif;
+    font-size: 1.3em;
+    margin-top: 4vh;
+    color: var(--color-letter2-primary);
+}
+
+footer{
+    background-color: #373535;
+    display: flex;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.2em;
+    padding: 2vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contato{
+    display: grid;
+    align-items: end;
+    justify-items: start;
+    grid-template-rows: repeat(2, 50px);
+    color: var(--primary-color);
+}
+
+.corp{
+    margin-top: 3vh;
+    display: flex;
+    gap: 5vh;
+}
+
+.corp li:hover{
+    color: var(--primary-color);
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
